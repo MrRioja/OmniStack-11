@@ -13,7 +13,7 @@ export default function Incidents() {
   function navigateToDetail() {
     navigation.navigate("Detail");
   }
-  /* 50" */
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
