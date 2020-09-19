@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { errors } = require("celebrate");
 const routes = require("./routes");
 
 // Criando o server
@@ -14,5 +15,7 @@ app.use(express.json());
 // Reacoplando o Router no server
 app.use(routes);
 
-// Indicando qual porta irá rodar a aplicação
-app.listen(3333);
+// Adicionando o erros do celebrate para feedbacks de validações
+app.use(errors());
+
+module.exports = app;
