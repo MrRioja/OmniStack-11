@@ -31,7 +31,54 @@ Ocorreu do dia 25 a 28 de Março de 2020 e teve como intuito mostrar na prática
 
 ## Be the Hero
 
-🚧 **Em construção** 🚧
+O Be the Hero é uma aplicação que tem como objetivo centralizar incidentes intermediados por ONGs para que usuários dispostos a ajudar possam visualizar os casos e entrar em contato com os responsáveis dos anúncios.
+
+A aplicação possuem interface web e mobile, cada qual com suas responsabilidades distintas as quais serão descritas a seguir.
+
+### Be the Hero - Web
+
+A aplicação web é destinada para as ONGs. É através da web que elas realizam seu cadastro na plataforma e cadastram os casos que estão intermediando.
+
+Tudo começa no cadastro da ONG, onde ela informará dados de contato, identificação e localização, conforme ilustrado a seguir:
+
+![Web register form](.github/web-register-form.png)
+
+Após o cadastro ser realizado, o ID da ONG será informado para o usuário, ele deverá anota-lo pois é com ele que os administradores realizam login, o qual ocorre na tela a seguir:
+
+![Web login](.github/web-login.png)
+
+Após informar o ID da ONG, o usuário é direcionado para o painel de administração. É nessa parte do sistema aonde reside o core da plataforma web, é aqui onde os incidentes são exibidos e podem ser criados e excluídos. Na imagem a seguir temos a representação do painel da ONG **ABC**, a qual não possui nenhum incidente cadastrado:
+
+![Web empty home](.github/web-empty-home.png)
+
+Ao clicar no botão `Cadastrar novo caso`, o usuário é direcionado para o formulário de registro que é exatamente como o exemplo abaixo:
+
+![Web home](.github/web-incident-form.png)
+
+Após inserir as informações e submeter o form, o usuário é direcionado para a home novamente, aonde será exibido o incidente recém criado, conforme ilustrado a seguir:
+
+![Web home](.github/web-home.png)
+
+Com isso, todas as funcionalidades da web foram exploradas e podemos partir para a apresentação do app mobile.
+Para ilustrar a aplicação web em funcionamento, deixo o GIF abaixo aonde navego por todas as funcionalidades disponíveis na aplicação:
+
+![Web demo](.github/web-demo.gif)
+
+### Be the Hero - Mobile
+
+A aplicação mobile é destinada para as pessoas que desejam visualizar os casos criados pelas ONGs e ajuda-las na solução. É através do app que os usuários entendem os casos, conhecem os valores necessários e encontram as informações para entrar em contato com os responsáveis.
+
+Ao acessar o app o usuário se depara com a lista dos casos e o total de casos disponíveis (exibido no canto superior direito):
+
+<img src=".github/mobile-home.png" alt="Mobile home" width="350" />
+
+Ao escolher um caso de interesse e clicar no link `Ver mais detalhes`, o usuário irá para a tela que conterá os dados do caso e os deep links para entrar em contato por e-mail e/ou WhatsApp:
+
+<img src=".github/mobile-incident-details.png" alt="Incident details" width="350" />
+
+Em resumo, esse é o fluxo do app mobile. A seguir deixo um GIF no qual navego pelo app mostrando-o em funcionamento:
+
+<img src=".github/mobile-demo.gif" alt="Mobile demo" width="350" />
 
 ## Instalação
 
